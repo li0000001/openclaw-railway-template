@@ -8,10 +8,23 @@ RUN apt-get update \
     gosu \
     procps \
     python3 \
+    python3-pip \
+    python3-venv \
     tini \
     build-essential \
     zip \
     unzip \
+    jq \
+    file \
+    tar \
+    gzip \
+    xz-utils \
+    openssh-client \
+    bash \
+    fonts-wqy-microhei \
+    libjpeg-dev \
+    zlib1g-dev \
+
   && rm -rf /var/lib/apt/lists/*
 
 RUN npm install -g openclaw@2026.5.27
